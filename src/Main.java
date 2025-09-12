@@ -37,5 +37,22 @@ public class Main {
         }
         int roznica = liczbaWpisana > liczbaDoZgadywania ? liczbaWpisana - liczbaDoZgadywania : liczbaDoZgadywania - liczbaWpisana;
         System.out.println(roznica);
+
+        roznica = roznica/10; // poniewaz operacja jest wykonywana na liczbach calkowutych
+        System.out.println("Roznica modulo 10 = "+roznica);
+        //instrukcja switch
+        switch (roznica){
+            case 0:
+                System.out.println("bardzo blisko");
+                break;
+            case 1:
+                System.out.println("calkiem niezle");
+                break;
+            case 2:
+                System.out.println("troche brakowalo");
+                break;
+            default:
+                System.out.println("moze nastepnym razem bedzie lepiej");
+        }
     }
 }
