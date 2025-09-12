@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -63,5 +64,35 @@ public class Main {
                     default -> "moze innym razem";
                 }
         );
+        System.out.println("zgadywanie 10 razy");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("podaj liczbe");
+            liczbaWpisana = scanner.nextInt();
+            if (liczbaWpisana == liczbaDoZgadywania){
+                System.out.println("brawo zgadles za " +i+"razem");
+                break;
+            }
+            else if (liczbaWpisana>liczbaDoZgadywania){
+                System.out.println("wpisales za duzo");
+            }
+            else {
+                System.out.println("wpisales za malo");
+            }
+        }
+        System.out.println("uwga losowanie nowej liczby");
+        Random random = new Random();
+        int liczbaDoZgadywania2 = random.nextInt(1,101);
+        System.out.println("podaj liczbe");
+        liczbaWpisana = scanner.nextInt();
+        while (liczbaWpisana != liczbaDoZgadywania2){
+            System.out.println("podaj liczbe");
+            liczbaWpisana = scanner.nextInt();
+            if (liczbaWpisana>liczbaDoZgadywania2){
+                System.out.println("wpisales za duzo");
+            }
+            else {
+                System.out.println("wpisales za malo");
+            }
+        }
     }
 }
