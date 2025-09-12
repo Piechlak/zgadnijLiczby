@@ -54,5 +54,14 @@ public class Main {
             default:
                 System.out.println("moze nastepnym razem bedzie lepiej");
         }
+        //wyrazenie switch - zwraca wartosc
+        System.out.println(
+                switch (roznica){
+                    case 0 -> "bylo blisko";
+                    case 1 -> "calkiem niezle";
+                    case 2 -> "troche brakowalo";
+                    default -> "moze innym razem";
+                }
+        );
     }
 }
