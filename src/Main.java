@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+      /*  System.out.println("Hello world!");
         //typu proste
         //z malej litery, tylko zmienne a nie obiekty
         //nie maja metod
@@ -42,6 +42,7 @@ public class Main {
         roznica = roznica/10; // poniewaz operacja jest wykonywana na liczbach calkowutych
         System.out.println("Roznica modulo 10 = "+roznica);
         //instrukcja switch
+
         switch (roznica){
             case 0:
                 System.out.println("bardzo blisko");
@@ -94,5 +95,40 @@ public class Main {
                 System.out.println("wpisales za malo");
             }
         }
+        System.out.println("liczby dwucyfrowe parzyste");
+        for (int i = 0 ; i < 100 ; i = i+2 ){
+            System.out.println(i+", ");
+        }
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Podaj pierwsza liczbe");
+        int pierwszaLiczba = klawiatura.nextInt();
+        System.out.println("Podaj druga liczbe");
+        int drugaLiczba = klawiatura.nextInt();
+        if (pierwszaLiczba < drugaLiczba){
+            for (int i = pierwszaLiczba; i <= drugaLiczba; i++){
+                System.out.println(i +", ");
+
+           // wczytuj tak dlugo liczbe az nie bedzie 0
+        }}
+        Scanner scanner  = new Scanner(System.in);
+        Scanner klawiatura = new Scanner(System.in);
+        int liczba = klawiatura.nextInt();
+        do {
+            System.out.print("Wprowadz liczbe: ");
+            liczba = scanner.nextInt();
+        } while (liczba != 0);
+
+        scanner.close();
+        //losuj liczbe z zakresu 1 a 100 tak dlugo az wylosujesz wieksza od 50
+        Random random1 = new Random();
+        int liczba;
+
+        do {
+            liczba = random1.nextInt(100) + 1;
+            System.out.println("Wylosowana liczba: " + liczba);
+        } while (liczba <= 50);
+
+        System.out.println("Liczba wieksza niż 50: " + liczba);*/
+
     }
 }
